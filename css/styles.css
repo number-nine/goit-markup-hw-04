@@ -1,0 +1,442 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --action-active: #404BBF;
+    --dark: #2E2F42;
+    --text-main: #434455;
+    --accent-color: #E7E9FC;
+    --light: #F4F4FD;
+    --background-primary: #FFFFFF;
+}
+
+body {
+
+    color: var(--text-main);
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* outline: 2px dashed orange; */
+
+}
+
+/* 4px fix */
+.block-img {
+    display: block;
+}
+
+/* common undotted list*/
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+
+/* common dark item header */
+.item-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--dark);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.item-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /* Temporary fix for a text wrapped with link in a team block (styles inherited from user-agent).  */
+    /* Will be deleted because team items doesn't look like a link on next mockups*/
+    color: var(--text-main);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.section {
+    background-color: var(--background-primary);
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--dark);
+
+
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* links */
+
+.item-link {
+    text-decoration: none;
+}
+
+/* Just for hover/focused purposes */
+.item-link:hover,
+.item-link:focus {
+    background-color: var(--primary-brand);
+}
+
+.button {
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+}
+
+.button.primary {
+    padding: 16px 32px;
+    color: var(--background-primary);
+    background-color: var(--primary-brand);
+
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--action-active);
+
+}
+
+
+.button.filter {
+    padding: 12px 24px;
+    border: 1px solid var(--accent-color);
+
+
+    background-color: var(--light);
+    color: var(--primary-brand);
+
+}
+
+.button.filter:hover,
+.button.filter:focus {
+    border: 1px solid transparent;
+
+    background-color: var(--action-active);
+    color: var(--background-primary);
+
+}
+
+/* Header Section */
+
+.header {
+    border-bottom: 1px solid var(--accent-color);
+    background-color: var(--background-primary);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Elements*/
+
+.logo {
+
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.logo .logo-accent {
+    color: var(--primary-brand);
+}
+
+.logo.navigation-item {
+    margin-right: 76px;
+}
+
+
+/* Site Navigation Block */
+
+.navigation {
+    display: flex;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-list .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-item {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--dark);
+    text-decoration: none;
+
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    color: var(--primary-brand);
+}
+
+.navigation-list .navigation-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/* Contacts Block*/
+
+.contact-list {
+    display: flex;
+}
+
+.contact-list .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contact-item {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--text-main);
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    color: var(--primary-brand);
+}
+
+.contact-list .contact-item {
+    font-style: normal;
+}
+
+/* Hero Section */
+
+.hero {
+
+    /*according to color scheme should be rgba(0, 0, 0, 0.05), ???*/
+    background-color: var(--dark);
+
+    text-align: center;
+
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
+
+    color: var(--background-primary);
+
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+/* Strengths Section */
+.strengths {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.strengths .section-title,
+.portfolio .section-title {
+    /* To show it`s invisible title */
+    color: lightslategrey;
+
+}
+
+.strengths .item-title {
+    margin-bottom: 8px;
+}
+
+.strengths-list {
+    display: flex;
+    /* justify-content: space-between;  */
+}
+
+.strengths-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/* Services Section */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.services .section-title {
+    margin-bottom: 72px;
+}
+
+.services-list {
+    display: flex;
+}
+
+.services-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+
+
+/* Team Section */
+
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: var(--light);
+}
+
+.team .section-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list .item {
+    text-align: center;
+}
+
+.team-list .item-title {
+    margin-bottom: 8px;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team-list .caption-wrapper {
+    padding: 32px 16px;
+
+    background-color: var(--background-primary);
+}
+
+
+/* Portfolio Section */
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+/* .works-list .item-image {
+    margin-bottom: 32px;
+} */
+
+.works-list .item-title {
+    margin-bottom: 8px;
+    
+}
+
+.works-list .caption-wrapper {
+    padding: 32px 16px;
+   
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    
+
+}
+
+
+/* Portfolio Filter */
+
+.filter-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/* Portfolio Works Catalogue */
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works-list .item:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.works-list .item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 48px;
+}
+
+
+
+
+/* Footer Section */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 16px;
+
+    color: var(--light);
+
+    line-height: 1.67;
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+    color: var(--primary-brand);
+}
+
+.footer-text {
+    margin-bottom: 0;
+    max-width: 264px;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
