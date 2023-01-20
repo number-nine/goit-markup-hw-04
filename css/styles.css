@@ -6,6 +6,7 @@
     --accent-color: #E7E9FC;
     --light: #F4F4FD;
     --background-primary: #FFFFFF;
+    --hero-background: rgba(46, 47, 66, 0.7);
 }
 
 body {
@@ -249,15 +250,6 @@ body {
 
 /* Hero Section */
 
-.hero {
-
-    /*according to color scheme should be rgba(0, 0, 0, 0.05), ???*/
-    background-color: var(--dark);
-
-    text-align: center;
-
-}
-
 .hero-title {
     margin-top: 0;
     margin-bottom: 48px;
@@ -267,6 +259,19 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+}
+
+.overlay {
+    height: 600px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 188px;
+    background-image:
+        linear-gradient(var(--hero-background), var(--hero-background)),
+        url("../images/people-office-1400x600-opt.jpg");
+
+    text-align: center;
 }
 
 /* Strengths Section */
@@ -371,16 +376,16 @@ body {
 
 .works-list .item-title {
     margin-bottom: 8px;
-    
+
 }
 
 .works-list .caption-wrapper {
     padding: 32px 16px;
-   
+
     border-left: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
-    
+
 
 }
 
