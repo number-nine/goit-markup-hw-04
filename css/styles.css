@@ -150,10 +150,15 @@ body {
 
 /* Socials */
 .link-social {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 12px;
+    /* display: block; */
+    display: flex;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
 
 
 }
@@ -299,6 +304,9 @@ body {
 .hero-title {
     margin-top: 0;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 498px;
 
     color: var(--background-primary);
 
@@ -343,7 +351,12 @@ body {
 }
 
 .strengths-list .item-picture {
-    padding: 24px 100px;
+    /* padding: 24px 100px; */
+    display: flex;
+    padding: 4px;
+    min-height: 112px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 8px;
 
     background-color: var(--light);
@@ -430,7 +443,7 @@ body {
 
 .team .link-social {
     background-color: var(--primary-brand);
-    border-radius: 50%;
+    
 }
 
 .team .link-social:hover,
@@ -512,8 +525,8 @@ body {
 .clients {
     padding-top: 130px;
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
+    /* padding-left: 156px; */
+    /* padding-right: 156px; */
 }
 
 .clients .section-title {
@@ -526,10 +539,12 @@ body {
 }
 
 .client-link {
-    display: block;
-    width: 168px;
-    height: 88px;
-    padding: 16px 32px;
+    display: flex;
+    min-width: 168px;
+    min-height: 88px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
 
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
@@ -593,7 +608,6 @@ body {
     margin-bottom: 16px;
 
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -609,10 +623,9 @@ body {
 }
 
 .footer .link-social {
-    padding: 8px;
+    /* padding: 8px; */
 
     background-color: var(--background-footer-social);
-    border-radius: 50%;
 }
 
 .footer .link-social:hover,
